@@ -1,12 +1,11 @@
 {
   "presets": [
-    "react",
+    "flow",
     ["env", { "targets": {
-      "Chrome": 56
+      "node": 6
     }}]
   ],
   "plugins": [
-    "react-hot-loader/babel",
     "dynamic-import-webpack",
     "transform-decorators-legacy",
     "transform-object-rest-spread",
@@ -18,7 +17,6 @@
   "env": {
     "test": {
       "presets": [
-        "react",
         ["env", { "targets": {
           "node": 6
         }}]
@@ -28,9 +26,8 @@
         "transform-async-to-generator"
       ],
     },
-    "production": {
+    "release": {
       "presets": [
-        "react",
         "flow",
         ["env", { "targets": {
           "browsers": ["last 2 versions", "IE 11"]

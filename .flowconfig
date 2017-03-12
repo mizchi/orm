@@ -1,7 +1,6 @@
 [ignore]
 .*/node_modules/flow.*
 .*/node_modules/babel-plugin-flow.*
-.*/node_modules/stylelint.*
 
 [include]
 
@@ -9,6 +8,3 @@
 ./decls
 
 [options]
-munge_underscores=true
-module.ignore_non_literal_requires=true
-esproposal.decorators=ignore

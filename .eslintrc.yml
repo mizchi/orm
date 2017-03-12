@@ -3,17 +3,15 @@ parserOptions:
   ecmaFeatures:
     jsx: true
 plugins:
-- flowtype
-- import
-- react
+  - flowtype
+  - import
 env:
   browser: true
   node: true
   es6: true
 extends:
-- standard
-- plugin:react/recommended
-- plugin:import/errors
+  - standard
+  - plugin:import/errors
 rules:
   # add more rules
   prefer-const: 2
@@ -23,8 +21,6 @@ rules:
   no-multiple-empty-lines:
   - 2
   - max: 1
-  # react
-  react/prefer-stateless-function: 2
   # import
   import/newline-after-import: 2
   import/imports-first: 2

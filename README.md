@@ -1,12 +1,8 @@
-# Modern Client Project ver 20170219
+# Modern Node Project Skeleton
 
 ## Concept
 
-- Linting by eslint, stylelint and flow
-- Deploy gh-pages by CircleCI
 - Run test(ava) in node
-- Build for Chrome in development
-- Build for IE11+ in production
 
 ## Stack
 
@@ -30,7 +26,6 @@ yarn start          # Start localhost:3355 with watch:js and watch:css
 # Tasks
 yarn run watch     # Watch and build js for Chrome
 yarn run build     # Build js for Chrome
-yarn run build:production # Build js for IE11+
 yarn run lint       # eslint
 yarn run typecheck  # flow
 yarn run test       # Test in node
