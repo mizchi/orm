@@ -8,6 +8,7 @@
   "plugins": [
     "dynamic-import-webpack",
     "transform-decorators-legacy",
+    "transform-class-properties",
     "transform-object-rest-spread",
     ["transform-runtime", {
       "polyfill": true,
@@ -17,12 +18,13 @@
   "env": {
     "test": {
       "presets": [
+        "flow",
         ["env", { "targets": {
           "node": 6
         }}]
       ],
       "plugins": [
-        ["flow-runtime", {"assert": true}],
+        "transform-class-properties",
         "transform-async-to-generator"
       ],
     },
@@ -32,6 +34,9 @@
         ["env", { "targets": {
           "browsers": ["last 2 versions", "IE 11"]
         }}]
+      ],
+      "plugins": [
+        "transform-class-properties"
       ]
     }
   }

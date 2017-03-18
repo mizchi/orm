@@ -56,3 +56,4 @@ public/bundle.js
 public/licenses.txt
 .nyc_output
 lib
+src/__test__/firebase-config.js
